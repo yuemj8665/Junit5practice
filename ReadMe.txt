@@ -16,16 +16,18 @@ Junit 연습하기
 TO DO List
 + 1. 최우선 Junit 테스트 한번 해보기.
 + 2. 케이스를 여러개 만들어서 사용해보자.
-+ 3.
++ 3. 그 외 기능추가 할때 각 기능의 테스트케이스 추가해보자.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ------------------------------------------------------------------------
 Error 확인 및 해결법 History
 ------------------------------------------------------------------------
+1. 에러 전문 (2021-02-28)
+########################################################################
 java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
 
 	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.lang.ClassLoaineClass(ClassLoader.java:1016)
 	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
 	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
 	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
@@ -50,8 +52,11 @@ Caused by: java.lang.ClassNotFoundException: org.hamcrest.SelfDescribing
 	... 19 more
 
 Process finished with exit code -1
-
-검색어 : java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
-해결한 사이트 : https://stackoverflow.com/questions/62290927/intellij-java-lang-noclassdeffounderror-org-hamcrest-selfdescribing
-방법 : Project Structure -> Dependencies -> Looked for hamcrest within the JDK installation -> Added hamcrest-core-1.3.jar
+########################################################################
+2. 검색어
+    java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
+3. 해결한 사이트
+    https://stackoverflow.com/questions/62290927/intellij-java-lang-noclassdeffounderror-org-hamcrest-selfdescribing
+4. 방법
+    Project Structure -> Dependencies -> Looked for hamcrest within the JDK installation -> Added hamcrest-core-1.3.jar
 ------------------------------------------------------------------------

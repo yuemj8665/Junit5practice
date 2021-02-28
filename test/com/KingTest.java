@@ -1,5 +1,6 @@
 package com;
 
+import com.practiceVO.kingVO.King;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

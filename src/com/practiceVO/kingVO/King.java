@@ -1,4 +1,4 @@
-package com;
+package com.practiceVO.kingVO;
 
 import lombok.Getter;
 
@@ -9,5 +9,4 @@ public class King {
     public King(String name){
         this.name = name;
     }
-
 }
